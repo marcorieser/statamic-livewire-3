@@ -16,7 +16,7 @@ class TodoListAntlers extends Component
 
     public function mount($passed = null)
     {
-        dump([self::class, $passed, gettype($passed)]);
+//        dump([self::class, $passed, gettype($passed)]);
     }
 
     public function render()
@@ -28,5 +28,14 @@ class TodoListAntlers extends Component
     {
         $this->todos[] = $this->todo;
         $this->todo = 'After submit by Livewire';
+    }
+
+    public function placeholder()
+    {
+        return <<<'HTML'
+        <div>
+           We are waiting for the Livewire component to load.
+        </div>
+        HTML;
     }
 }

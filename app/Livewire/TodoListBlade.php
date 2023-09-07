@@ -16,7 +16,7 @@ class TodoListBlade extends Component
 
     public function mount($passed = null)
     {
-        dump([self::class, $passed, gettype($passed)]);
+//        dump([self::class, $passed, gettype($passed)]);
     }
 
     public function render()

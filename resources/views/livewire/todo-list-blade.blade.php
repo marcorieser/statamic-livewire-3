@@ -11,8 +11,8 @@
             <button type="submit" class="bg-gray-700 p-2 text-white">Add Todo with Alpine</button>
         </form>
 
-        <form wire:submit.prevent="add">
-            <input type="text" wire:model="todo"> <br>
+        <form wire:submit="add">
+            <input type="text" wire:model.live="todo"> <br>
             <button type="submit" class="bg-gray-700 p-2 text-white">Add Todo with Livewire</button>
         </form>
     </div>
