@@ -34,7 +34,8 @@
 
 <script>
     document.addEventListener('livewire:initialized', function () {
-        {{ livewire:this set="('title', { livewire:this get="('title')" } + ' (modified by JS)')" }}
+{{#         {{ livewire:this set="('title', { livewire:this get="('title')" } + ' (modified by JS)')" }} #}}
+        {{ livewire:this }}.set('title', {{ livewire:this }}.get('title') + ' (modified by JS)');
     })
 </script>
 </div>
